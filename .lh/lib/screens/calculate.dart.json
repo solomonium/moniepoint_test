@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/screens/calculate.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1691004143793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691102265918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n \n class _CalculateState extends State<Calculate> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Placeholder();\n+    return Center(child: Column(children: [PrimaryText(text: 'Calculate')],),);\n   }\n }\n"
+                },
+                {
+                    "date": 1691102282696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n   @override\n   Widget build(BuildContext context) {\n     return const Center(\n       child: Column(\n+        mainAxisAlignment: MainAxisAlignment.center,\n         children: [PrimaryText(text: 'Calculate')],\n       ),\n     );\n   }\n"
+                }
+            ],
+            "date": 1691004143793,
+            "name": "Commit-0",
+            "content": "\n\nimport 'package:monie_point/export.dart';\n\nclass Calculate extends StatefulWidget {\n  const Calculate({super.key});\n\n  @override\n  State<Calculate> createState() => _CalculateState();\n}\n\nclass _CalculateState extends State<Calculate> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}"
+        }
+    ]
+}

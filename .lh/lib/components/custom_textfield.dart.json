@@ -1,0 +1,62 @@
+{
+    "sourceFile": "lib/components/custom_textfield.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1690983583718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690983612523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:monie_point/export.dart';\n+import 'package:monie_point/utils/colors.dart';\n \n class CustomTextField<T> extends StatefulWidget {\n   final String? label;\n   final String hint;\n@@ -75,9 +76,9 @@\n         hintStyle: const TextStyle(\n           color: Colors.grey,\n         ),\n         prefixIcon: widget.prefixIcon,\n-        prefixIconColor: NimvasColors.primaryText,\n+        prefixIconColor: MoniePointTestColors.primaryText,\n         filled: true,\n         fillColor: Colors.grey[200],\n         enabledBorder: OutlineInputBorder(\n           borderSide: BorderSide.none,\n"
+                },
+                {
+                    "date": 1690983626631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n   @override\n   Widget build(BuildContext context) {\n     return TextFormField(\n       autovalidateMode: AutovalidateMode.onUserInteraction,\n-      cursorColor: NimvasColors.primaryText,\n+      cursorColor: MoniePointTestColors.primaryText,\n       textInputAction: widget.textInputAction,\n       keyboardType: widget.keyBoardType,\n       controller: widget.controller,\n       focusNode: _focusNode,\n"
+                },
+                {
+                    "date": 1690986252095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n   final TextInputAction textInputAction;\n   final TextInputType keyBoardType;\n   final String? Function(String?)? validator;\n   final Widget? prefixIcon;\n+  final double? borderRadius;\n   final bool? obscureText;\n   final void Function(String)? onChanged; // New onChanged property\n   final List<T>? items; // Make items parameter optional\n   final FocusNode? focusNode; // Optional focusNode property\n@@ -21,8 +22,9 @@\n     required this.controller,\n     required this.textInputAction,\n     required this.keyBoardType,\n     this.validator,\n+    this.borderRadius,\n     this.prefixIcon,\n     this.obscureText,\n     this.onChanged,\n     this.items, // Make items parameter optional\n"
+                },
+                {
+                    "date": 1690986306117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,13 +83,13 @@\n         filled: true,\n         fillColor: Colors.grey[200],\n         enabledBorder: OutlineInputBorder(\n           borderSide: BorderSide.none,\n-          borderRadius: BorderRadius.circular(8.0),\n+          borderRadius: BorderRadius.circular(widget.borderRadius ?? 8.0),\n         ),\n         focusedBorder: OutlineInputBorder(\n           borderSide: BorderSide.none,\n-          borderRadius: BorderRadius.circular(8.0),\n+          borderRadius: BorderRadius.circular(widget.borderRadius ?? 8.0),\n         ),\n       ),\n       validator: widget.validator,\n     );\n"
+                },
+                {
+                    "date": 1690986344609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n   final TextInputAction textInputAction;\n   final TextInputType keyBoardType;\n   final String? Function(String?)? validator;\n   final Widget? prefixIcon;\n+  final Widget? suffixIcon;\n   final double? borderRadius;\n   final bool? obscureText;\n   final void Function(String)? onChanged; // New onChanged property\n   final List<T>? items; // Make items parameter optional\n@@ -24,8 +25,9 @@\n     required this.keyBoardType,\n     this.validator,\n     this.borderRadius,\n     this.prefixIcon,\n+    this.suffixIcon,\n     this.obscureText,\n     this.onChanged,\n     this.items, // Make items parameter optional\n     this.focusNode, // Optional focusNode property\n"
+                },
+                {
+                    "date": 1690986393593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,9 @@\n         hintStyle: const TextStyle(\n           color: Colors.grey,\n         ),\n         prefixIcon: widget.prefixIcon,\n+        suffixIcon: widget.suffixIcon,\n         prefixIconColor: MoniePointTestColors.primaryText,\n         filled: true,\n         fillColor: Colors.grey[200],\n         enabledBorder: OutlineInputBorder(\n"
+                },
+                {
+                    "date": 1690986566074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n         prefixIcon: widget.prefixIcon,\n         suffixIcon: widget.suffixIcon,\n         prefixIconColor: MoniePointTestColors.primaryText,\n         filled: true,\n-        fillColor: Colors.grey[200],\n+        fillColor: MoniePointTestColors.background,\n         enabledBorder: OutlineInputBorder(\n           borderSide: BorderSide.none,\n           borderRadius: BorderRadius.circular(widget.borderRadius ?? 8.0),\n         ),\n"
+                },
+                {
+                    "date": 1691179392073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n         prefixIcon: widget.prefixIcon,\n         suffixIcon: widget.suffixIcon,\n         prefixIconColor: MoniePointTestColors.primaryText,\n         filled: true,\n-        fillColor: MoniePointTestColors.background,\n+        fillColor: MoniePointTestColors.secondaryText.withOpacity(0.5),\n         enabledBorder: OutlineInputBorder(\n           borderSide: BorderSide.none,\n           borderRadius: BorderRadius.circular(widget.borderRadius ?? 8.0),\n         ),\n"
+                },
+                {
+                    "date": 1691184729091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n   final String? Function(String?)? validator;\n   final Widget? prefixIcon;\n   final Widget? suffixIcon;\n   final double? borderRadius;\n+  final Color? fillColor;\n   final bool? obscureText;\n   final void Function(String)? onChanged; // New onChanged property\n   final List<T>? items; // Make items parameter optional\n   final FocusNode? focusNode; // Optional focusNode property\n@@ -23,8 +24,9 @@\n     required this.textInputAction,\n     required this.keyBoardType,\n     this.validator,\n     this.borderRadius,\n+    this.fillColor,\n     this.prefixIcon,\n     this.suffixIcon,\n     this.obscureText,\n     this.onChanged,\n"
+                },
+                {
+                    "date": 1691184786408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n         prefixIcon: widget.prefixIcon,\n         suffixIcon: widget.suffixIcon,\n         prefixIconColor: MoniePointTestColors.primaryText,\n         filled: true,\n-        fillColor: MoniePointTestColors.secondaryText.withOpacity(0.5),\n+        fillColor: widget.fillColor ?? Colors.white ,\n         enabledBorder: OutlineInputBorder(\n           borderSide: BorderSide.none,\n           borderRadius: BorderRadius.circular(widget.borderRadius ?? 8.0),\n         ),\n"
+                },
+                {
+                    "date": 1691184798016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n         prefixIcon: widget.prefixIcon,\n         suffixIcon: widget.suffixIcon,\n         prefixIconColor: MoniePointTestColors.primaryText,\n         filled: true,\n-        fillColor: widget.fillColor ?? Colors.white,\n+        fillColor: widget.fillColor ?? MoniePointTestColors.background,\n         enabledBorder: OutlineInputBorder(\n           borderSide: BorderSide.none,\n           borderRadius: BorderRadius.circular(widget.borderRadius ?? 8.0),\n         ),\n"
+                }
+            ],
+            "date": 1690983583718,
+            "name": "Commit-0",
+            "content": "import 'package:monie_point/export.dart';\n\nclass CustomTextField<T> extends StatefulWidget {\n  final String? label;\n  final String hint;\n  final TextEditingController controller;\n  final TextInputAction textInputAction;\n  final TextInputType keyBoardType;\n  final String? Function(String?)? validator;\n  final Widget? prefixIcon;\n  final bool? obscureText;\n  final void Function(String)? onChanged; // New onChanged property\n  final List<T>? items; // Make items parameter optional\n  final FocusNode? focusNode; // Optional focusNode property\n\n  const CustomTextField({\n    Key? key,\n    this.label,\n    required this.hint,\n    required this.controller,\n    required this.textInputAction,\n    required this.keyBoardType,\n    this.validator,\n    this.prefixIcon,\n    this.obscureText,\n    this.onChanged,\n    this.items, // Make items parameter optional\n    this.focusNode, // Optional focusNode property\n  }) : super(key: key);\n\n  @override\n  _CustomTextFieldState<T> createState() => _CustomTextFieldState<T>();\n}\n\nclass _CustomTextFieldState<T> extends State<CustomTextField<T>> {\n  late FocusNode _focusNode;\n\n  @override\n  void initState() {\n    super.initState();\n    _focusNode = widget.focusNode ?? FocusNode();\n    _focusNode.addListener(_onFocusChange);\n  }\n\n  @override\n  void dispose() {\n    _focusNode.removeListener(_onFocusChange);\n    if (widget.focusNode == null) {\n      _focusNode.dispose();\n    }\n    super.dispose();\n  }\n\n  void _onFocusChange() {\n    setState(() {});\n  }\n\n  @override\n  Widget build(BuildContext context) {\n    return TextFormField(\n      autovalidateMode: AutovalidateMode.onUserInteraction,\n      cursorColor: NimvasColors.primaryText,\n      textInputAction: widget.textInputAction,\n      keyboardType: widget.keyBoardType,\n      controller: widget.controller,\n      focusNode: _focusNode,\n      obscureText: widget.obscureText ?? false,\n      onChanged: widget.onChanged,\n      decoration: InputDecoration(\n        labelText: widget.label,\n        labelStyle: const TextStyle(\n          color: Colors.grey,\n        ),\n        hintText: widget.hint,\n        hintStyle: const TextStyle(\n          color: Colors.grey,\n        ),\n        prefixIcon: widget.prefixIcon,\n        prefixIconColor: NimvasColors.primaryText,\n        filled: true,\n        fillColor: Colors.grey[200],\n        enabledBorder: OutlineInputBorder(\n          borderSide: BorderSide.none,\n          borderRadius: BorderRadius.circular(8.0),\n        ),\n        focusedBorder: OutlineInputBorder(\n          borderSide: BorderSide.none,\n          borderRadius: BorderRadius.circular(8.0),\n        ),\n      ),\n      validator: widget.validator,\n    );\n  }\n}\n"
+        }
+    ]
+}

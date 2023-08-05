@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/core/provider/base_provider.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1691005125183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1691005125183,
+            "name": "Commit-0",
+            "content": "import 'package:monie_point/export.dart';\n\nclass BaseModel with ChangeNotifier {\n  // LoadingState _loadingState = LoadingState.idle;\n\n  // LoadingState get loadingState => _loadingState;\n\n  // String _errorMsg = 'An unknown error occured';\n\n  // String get errorMsg => _errorMsg;\n\n  // updateLoadingState(LoadingState loadingState) {\n  //   _loadingState = loadingState;\n  //   notifyListeners();\n  // }\n\n  // void disposeState() {\n  //   //\n  // }\n\n  // updateErrorMsgState(String errorMsg) {\n  //   _errorMsg = errorMsg;\n  //   notifyListeners();\n  // }\n\n  // bool isBusy() => (loadingState == LoadingState.busy);\n}"
+        }
+    ]
+}

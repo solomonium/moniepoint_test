@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/export.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690909018399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690909029590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,8 @@\n export 'package:shared_preferences/shared_preferences.dart';\n export 'package:styled_widget/styled_widget.dart';\n \n export 'components/components.dart';\n-export 'components/components.dart';\n export 'core/core.dart';\n export 'screens/screens.dart';\n // export 'routes/routes.dart';\n // export 'utils/utils.dart';\n"
+                },
+                {
+                    "date": 1690980053886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,16 @@\n export 'dart:convert';\n export 'dart:developer';\n export 'dart:io' show Platform;\n export 'dart:io';\n+export 'package:flutter/material.dart';\n \n+\n export 'package:animations/animations.dart';\n export 'package:flutter/foundation.dart';\n export 'package:flutter_svg/flutter_svg.dart';\n export 'package:intl/intl.dart';\n-export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';\n+// export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';\n export 'package:provider/provider.dart';\n export 'package:shared_preferences/shared_preferences.dart';\n export 'package:styled_widget/styled_widget.dart';\n \n"
+                }
+            ],
+            "date": 1690909018399,
+            "name": "Commit-0",
+            "content": "export 'components/components.dart';\n\nexport 'package:animations/animations.dart';\nexport 'package:flutter_svg/flutter_svg.dart';\nexport 'package:intl/intl.dart';\nexport 'package:provider/provider.dart';\nexport 'package:styled_widget/styled_widget.dart';\nexport 'package:shared_preferences/shared_preferences.dart';\nexport 'package:modal_bottom_sheet/modal_bottom_sheet.dart';\n\nexport 'dart:developer';\nexport 'dart:convert';\nexport 'package:flutter/foundation.dart';\nexport 'dart:io' show Platform;\nexport 'dart:io';\n\nexport 'components/components.dart';\nexport 'core/core.dart';\nexport 'screens/screens.dart';\n// export 'routes/routes.dart';\n// export 'utils/utils.dart';\n"
+        }
+    ]
+}

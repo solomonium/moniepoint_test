@@ -1,0 +1,36 @@
+name: monie_point
+description: A new Flutter project.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.5 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  modal_bottom_sheet: ^2.1.2
+  flutter_svg: ^2.0.7
+  intl: ^0.18.1
+  provider: ^6.0.5
+  styled_widget: ^0.4.1
+  shared_preferences: ^2.2.0
+  animations: ^2.0.7
+  flutter_screenutil: ^5.8.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/

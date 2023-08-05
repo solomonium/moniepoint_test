@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/core/provider/app_state.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1691005261323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1691005261323,
+            "name": "Commit-0",
+            "content": "import 'package:monie_point/core/provider/base_provider.dart';\nimport 'package:monie_point/export.dart';\n\nclass AppStateProvider extends BaseModel {\n  static AppStateProvider of(BuildContext context) =>\n      Provider.of<AppStateProvider>(context, listen: false);\n  int _currentTabIndex = 0; // Defaults to chat tab\n\n  int get currentTabIndex => _currentTabIndex;\n\n  void setCurrentTabTo({required int newTabIndex}) {\n    _currentTabIndex = newTabIndex;\n    notifyListeners();\n  }\n\n  void disposeState() {\n    _currentTabIndex = 0;\n    // super.disposeState();\n  }\n}"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/screens/screens.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1690982112207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691004091660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,5 @@\n export 'home.dart';\n+export 'nav_bar.dart';\n+export 'calculate.dart';\n+export 'shipment.dart';\n+export 'profile.dart';\n"
+                },
+                {
+                    "date": 1691162445069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export 'calculate.dart';\n-export 'home.dart';\n+export 'navbar_items/calculate.dart';\n+export 'navbar_items/home.dart';\n export 'nav_bar.dart';\n-export 'profile.dart';\n-export 'shipment.dart';\n+export 'navbar_items/profile.dart';\n+export 'navbar_items/shipment.dart';\n"
+                },
+                {
+                    "date": 1691185622524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n export 'nav_bar.dart';\n+export 'add_stop.dart';\n export 'navbar_items/calculate.dart';\n export 'navbar_items/home.dart';\n export 'navbar_items/profile.dart';\n export 'navbar_items/shipment.dart';\n"
+                }
+            ],
+            "date": 1690982112207,
+            "name": "Commit-0",
+            "content": "export 'home.dart';"
+        }
+    ]
+}

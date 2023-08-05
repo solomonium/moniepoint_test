@@ -1,0 +1,22 @@
+{
+    "sourceFile": "pubspec.yaml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1691005967443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691006095573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n flutter:\n   uses-material-design: true\n \n   assets:\n-    - images/a_dot_burr.jpeg\n-    - images/a_dot_ham.jpeg\n+    - assets/icons/\n+    - assets/images/\n"
+                }
+            ],
+            "date": 1691005967443,
+            "name": "Commit-0",
+            "content": "name: monie_point\ndescription: A new Flutter project.\n\npublish_to: 'none' # Remove this line if you wish to publish to pub.dev\n\n\nversion: 1.0.0+1\n\nenvironment:\n  sdk: '>=3.0.5 <4.0.0'\n\n\ndependencies:\n  flutter:\n    sdk: flutter\n\n\n  cupertino_icons: ^1.0.2\n  modal_bottom_sheet: ^2.1.2\n  flutter_svg: ^2.0.7\n  intl: ^0.18.1\n  provider: ^6.0.5\n  styled_widget: ^0.4.1\n  shared_preferences: ^2.2.0\n  animations: ^2.0.7\n  flutter_screenutil: ^5.8.4\n\ndev_dependencies:\n  flutter_test:\n    sdk: flutter\n\n\n  flutter_lints: ^2.0.0\n\nflutter:\n  uses-material-design: true\n\n  assets:\n    - images/a_dot_burr.jpeg\n    - images/a_dot_ham.jpeg\n\n  "
+        }
+    ]
+}

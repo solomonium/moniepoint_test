@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/utils/extensions.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1690988987734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1690988987734,
+            "name": "Commit-0",
+            "content": "import 'package:monie_point/export.dart';\n\nextension ClickableExtensions on Widget {\n  Widget clickable(\n    void Function()? action, {\n    bool opaque = true,\n  }) {\n    return GestureDetector(\n      behavior: opaque ? HitTestBehavior.opaque : HitTestBehavior.deferToChild,\n      onTap: action,\n      child: MouseRegion(\n        cursor: SystemMouseCursors.click,\n        opaque: opaque,\n        child: this,\n      ),\n    );\n  }\n\n  Widget rippleClick(void Function()? onTap,\n      {EdgeInsetsGeometry? padding, BorderRadiusGeometry? clickBorderRadius}) {\n    return Stack(\n      children: <Widget>[\n        Padding(\n          padding:\n              padding ?? const EdgeInsets.symmetric(horizontal: 8, vertical: 3),\n          child: this,\n        ),\n        Positioned(\n          left: 0,\n          right: 0,\n          top: 0,\n          bottom: 0,\n          child: TextButton(\n            style: TextButton.styleFrom(\n              shape: RoundedRectangleBorder(\n                borderRadius: clickBorderRadius!,\n              ),\n              padding: const EdgeInsets.symmetric(horizontal: 0),\n            ),\n            onPressed: onTap,\n            child: Container(),\n          ),\n        ),\n      ],\n    );\n  }\n}\n"
+        }
+    ]
+}

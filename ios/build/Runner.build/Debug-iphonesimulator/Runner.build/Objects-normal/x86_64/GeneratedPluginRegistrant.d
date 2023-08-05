@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/solomonlaleye/Desktop/monie_point/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/solomonlaleye/Desktop/monie_point/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Modules/module.modulemap \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/Flutter.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterEngineGroup.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/solomonlaleye/Desktop/monie_point/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterViewController.h

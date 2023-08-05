@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/components/secondary_text.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690980405425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690984363462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:monie_point/export.dart';\n+import 'package:monie_point/utils/colors.dart';\n \n class SecondaryText extends StatelessWidget {\n   final Color? color;\n   final String text;\n@@ -20,9 +21,9 @@\n   Widget build(BuildContext context) {\n     return Text(\n       text,\n       style: TextStyle(\n-          // color: color ?? NimvasColors.secondaryText,\n+          color: color ?? MoniePointTestColors.secondaryText,\n           fontSize: fontSize ?? 15.0,\n           fontWeight: fontWeight ?? FontWeight.w400,\n           fontFamily: 'Candara'),\n       textAlign: textAlign ?? TextAlign.start,\n"
+                },
+                {
+                    "date": 1690984473329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   Widget build(BuildContext context) {\n     return Text(\n       text,\n       style: TextStyle(\n-          color: color ?? MoniePointTestColors.secondaryText,\n+          color: color ?? MoniePointTestColors.border,\n           fontSize: fontSize ?? 15.0,\n           fontWeight: fontWeight ?? FontWeight.w400,\n           fontFamily: 'Candara'),\n       textAlign: textAlign ?? TextAlign.start,\n"
+                }
+            ],
+            "date": 1690980405425,
+            "name": "Commit-0",
+            "content": "\nimport 'package:monie_point/export.dart';\n\nclass SecondaryText extends StatelessWidget {\n  final Color? color;\n  final String text;\n  final double? fontSize;\n  final FontWeight? fontWeight;\n  final TextAlign? textAlign;\n\n  const SecondaryText({\n    super.key,\n    this.color,\n    required this.text,\n    this.fontSize,\n    this.fontWeight,\n    this.textAlign,\n  });\n\n  @override\n  Widget build(BuildContext context) {\n    return Text(\n      text,\n      style: TextStyle(\n          color: color ?? NimvasColors.secondaryText,\n          fontSize: fontSize ?? 15.0,\n          fontWeight: fontWeight ?? FontWeight.w400,\n          fontFamily: 'Candara'),\n      textAlign: textAlign ?? TextAlign.start,\n    );\n  }\n}\n"
+        }
+    ]
+}

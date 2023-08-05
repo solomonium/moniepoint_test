@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/screens/shipment.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1691004197977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691102329938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,12 @@\n \n class _ShipmentState extends State<Shipment> {\n   @override\n   Widget build(BuildContext context) {\n-    return const Placeholder();\n+    return const Center(\n+      child: Column(\n+        mainAxisAlignment: MainAxisAlignment.center,\n+        children: [PrimaryText(text: 'Shipments')],\n+      ),\n+    );\n   }\n }\n"
+                }
+            ],
+            "date": 1691004197977,
+            "name": "Commit-0",
+            "content": "import 'package:monie_point/export.dart';\n\nclass Shipment extends StatefulWidget {\n  const Shipment({super.key});\n\n  @override\n  State<Shipment> createState() => _ShipmentState();\n}\n\nclass _ShipmentState extends State<Shipment> {\n  @override\n  Widget build(BuildContext context) {\n    return const Placeholder();\n  }\n}\n"
+        }
+    ]
+}

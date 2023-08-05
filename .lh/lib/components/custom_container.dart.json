@@ -1,0 +1,70 @@
+{
+    "sourceFile": "lib/components/custom_container.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1690980000755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690980011253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n                 : null,\n           ),\n           child: widget.child,\n         ),\n-        addVerticalSpace(20),\n+        // addVerticalSpace(20),\n         widget.labelWidget ?? const SizedBox.shrink(),\n       ],\n     );\n   }\n"
+                },
+                {
+                    "date": 1690980086038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\n import 'package:flutter/material.dart';\n \n class CustomContainer extends StatefulWidget {\n   final double? height;\n"
+                },
+                {
+                    "date": 1690980139847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n-import 'package:flutter/material.dart';\n \n+import 'package:monie_point/export.dart';\n+\n class CustomContainer extends StatefulWidget {\n   final double? height;\n   final double width;\n   final Color? color;\n"
+                },
+                {
+                    "date": 1691102391083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             boxShadow: widget.addShadow\n                 ? [\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n-                      blurRadius: 3.0,\n+                      blurRadius: 1.0,\n                       spreadRadius: 0.5,\n                       offset: const Offset(1, 1),\n                     ),\n                   ]\n"
+                },
+                {
+                    "date": 1691102407327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n                       blurRadius: 1.0,\n                       spreadRadius: 0.5,\n-                      offset: const Offset(1, 1),\n+                      offset: const Offset(0, 0),\n                     ),\n                   ]\n                 : null,\n           ),\n"
+                },
+                {
+                    "date": 1691102420296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n                       blurRadius: 1.0,\n                       spreadRadius: 0.5,\n-                      offset: const Offset(0, 0),\n+                      offset: const Offset(5, 5),\n                     ),\n                   ]\n                 : null,\n           ),\n"
+                },
+                {
+                    "date": 1691102435242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             boxShadow: widget.addShadow\n                 ? [\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n-                      blurRadius: 1.0,\n+                      blurRadius: 3.0,\n                       spreadRadius: 0.5,\n                       offset: const Offset(5, 5),\n                     ),\n                   ]\n"
+                },
+                {
+                    "date": 1691102480272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n                       blurRadius: 3.0,\n                       spreadRadius: 0.5,\n-                      offset: const Offset(5, 5),\n+                      offset: const Offset(1, 1),\n                     ),\n                   ]\n                 : null,\n           ),\n"
+                },
+                {
+                    "date": 1691187680366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n                 ? [\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n                       blurRadius: 3.0,\n-                      spreadRadius: 0.5,\n+                      spreadRadius: 0.2,\n                       offset: const Offset(1, 1),\n                     ),\n                   ]\n                 : null,\n"
+                },
+                {
+                    "date": 1691187686953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             boxShadow: widget.addShadow\n                 ? [\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n-                      blurRadius: 3.0,\n+                      blurRadius: 0.0,\n                       spreadRadius: 0.2,\n                       offset: const Offset(1, 1),\n                     ),\n                   ]\n"
+                },
+                {
+                    "date": 1691187698302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n             boxShadow: widget.addShadow\n                 ? [\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n-                      blurRadius: 0.0,\n+                      blurRadius: 2.0,\n                       spreadRadius: 0.2,\n                       offset: const Offset(1, 1),\n                     ),\n                   ]\n"
+                },
+                {
+                    "date": 1691187712443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n                     BoxShadow(\n                       color: Colors.black.withOpacity(0.2),\n                       blurRadius: 2.0,\n                       spreadRadius: 0.0,\n-                      offset: const Offset(1, 1),\n+                      offset: const Offset(0, 1),\n                     ),\n                   ]\n                 : null,\n           ),\n"
+                },
+                {
+                    "date": 1691187725663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n             borderRadius: BorderRadius.circular(widget.borderRadius ?? 20),\n             boxShadow: widget.addShadow\n                 ? [\n                     BoxShadow(\n-                      color: Colors.black.withOpacity(0.2),\n+                      color: Colors.grey.withOpacity(0.2),\n                       blurRadius: 2.0,\n                       spreadRadius: 0.0,\n                       offset: const Offset(0, 0),\n                     ),\n"
+                }
+            ],
+            "date": 1690980000755,
+            "name": "Commit-0",
+            "content": "\nimport 'package:flutter/material.dart';\n\nclass CustomContainer extends StatefulWidget {\n  final double? height;\n  final double width;\n  final Color? color;\n  final double? borderRadius;\n  final Widget child;\n  final Widget? labelWidget;\n  final bool addShadow; // New property for enabling/disabling shadow\n\n  const CustomContainer({\n    Key? key,\n    this.height,\n    required this.width,\n    this.color,\n    this.borderRadius,\n    this.labelWidget,\n    required this.child,\n    this.addShadow = true, // Default value for addShadow is true\n  }) : super(key: key);\n\n  @override\n  _CustomContainerState createState() => _CustomContainerState();\n}\n\nclass _CustomContainerState extends State<CustomContainer> {\n  late double _currentWidth;\n\n  @override\n  void initState() {\n    super.initState();\n    // _currentHeight = widget.height;\n    _currentWidth = widget.width;\n  }\n\n  @override\n  void didUpdateWidget(CustomContainer oldWidget) {\n    super.didUpdateWidget(oldWidget);\n    if (widget.height != oldWidget.height) {\n      setState(() {\n        // _currentHeight = widget.height;\n      });\n    }\n    if (widget.width != oldWidget.width) {\n      setState(() {\n        _currentWidth = widget.width;\n      });\n    }\n  }\n\n  @override\n  Widget build(BuildContext context) {\n    return Column(\n      children: [\n        AnimatedContainer(\n          // height: _currentHeight,\n          width: _currentWidth,\n          duration: const Duration(milliseconds: 300),\n          curve: Curves.easeInOut,\n          decoration: BoxDecoration(\n            color: widget.color,\n            borderRadius: BorderRadius.circular(widget.borderRadius ?? 20),\n            boxShadow: widget.addShadow\n                ? [\n                    BoxShadow(\n                      color: Colors.black.withOpacity(0.2),\n                      blurRadius: 3.0,\n                      spreadRadius: 0.5,\n                      offset: const Offset(1, 1),\n                    ),\n                  ]\n                : null,\n          ),\n          child: widget.child,\n        ),\n        addVerticalSpace(20),\n        widget.labelWidget ?? const SizedBox.shrink(),\n      ],\n    );\n  }\n}\n"
+        }
+    ]
+}

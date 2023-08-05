@@ -1,0 +1,50 @@
+{
+    "sourceFile": "lib/utils/colors.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1690980760004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690981060094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n class NimvasColors {\n   // Light Theme\n   static const Color background = Color.fromRGBO(255, 255, 255, 1);\n   static const Color border = Color.fromRGBO(204, 209, 211, 1);\n-  static const Color primary = Color.fromRGBO(13, 212, 92, 1);\n+  static const Color primary = Color.fromRGBO(103, 58, 183, 1);\n   static const Color primaryText = Color.fromRGBO(28, 25, 57, 1);\n   static Color secondaryText =\n       const Color.fromRGBO(0, 0, 0, 1).withOpacity(0.4);\n   static const Color logoColor = Color.fromRGBO(98, 144, 233, 1);\n"
+                },
+                {
+                    "date": 1690981256363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n   // Light Theme\n   static const Color background = Color.fromRGBO(255, 255, 255, 1);\n   static const Color border = Color.fromRGBO(204, 209, 211, 1);\n   static const Color primary = Color.fromRGBO(103, 58, 183, 1);\n+    static const Color greenDot = Color.fromRGBO(13, 212, 92, 1);\n+\n   static const Color primaryText = Color.fromRGBO(28, 25, 57, 1);\n   static Color secondaryText =\n       const Color.fromRGBO(0, 0, 0, 1).withOpacity(0.4);\n   static const Color logoColor = Color.fromRGBO(98, 144, 233, 1);\n"
+                },
+                {
+                    "date": 1690981313407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:monie_point/export.dart';\n \n-class NimvasColors {\n+class MoniePointTestColors {\n   // Light Theme\n   static const Color background = Color.fromRGBO(255, 255, 255, 1);\n   static const Color border = Color.fromRGBO(204, 209, 211, 1);\n   static const Color primary = Color.fromRGBO(103, 58, 183, 1);\n"
+                },
+                {
+                    "date": 1690981779682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n \n   static const Color primaryText = Color.fromRGBO(28, 25, 57, 1);\n   static Color secondaryText =\n       const Color.fromRGBO(0, 0, 0, 1).withOpacity(0.4);\n-  static const Color logoColor = Color.fromRGBO(98, 144, 233, 1);\n-  static const Color redBox = Color.fromRGBO(195, 3, 3, 1);\n-  static const Color highlight = Colors.blue;\n-  static const Color addClient = Color.fromRGBO(3, 9, 164, 0.7);\n-  static const Color addTaxPayer = Color.fromRGBO(3, 9, 164, 1);\n+  // static const Color logoColor = Color.fromRGBO(98, 144, 233, 1);\n+  // static const Color redBox = Color.fromRGBO(195, 3, 3, 1);\n+  // static const Color highlight = Colors.blue;\n+  // static const Color addClient = Color.fromRGBO(3, 9, 164, 0.7);\n+  // static const Color addTaxPayer = Color.fromRGBO(3, 9, 164, 1);\n }\n"
+                },
+                {
+                    "date": 1690982266791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   static const Color primaryText = Color.fromRGBO(28, 25, 57, 1);\n   static Color secondaryText =\n       const Color.fromRGBO(0, 0, 0, 1).withOpacity(0.4);\n-  // static const Color logoColor = Color.fromRGBO(98, 144, 233, 1);\n+  static const Color clickableText = Color.fromRGBO(98, 144, 233, 1);\n   // static const Color redBox = Color.fromRGBO(195, 3, 3, 1);\n   // static const Color highlight = Colors.blue;\n   // static const Color addClient = Color.fromRGBO(3, 9, 164, 0.7);\n   // static const Color addTaxPayer = Color.fromRGBO(3, 9, 164, 1);\n"
+                },
+                {
+                    "date": 1690982413908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n   static const Color primaryText = Color.fromRGBO(28, 25, 57, 1);\n   static Color secondaryText =\n       const Color.fromRGBO(0, 0, 0, 1).withOpacity(0.4);\n-  static const Color clickableText = Color.fromRGBO(98, 144, 233, 1);\n+  static const Color clickableText = Color.fromRGBO(249, 180, 45, 1);\n   // static const Color redBox = Color.fromRGBO(195, 3, 3, 1);\n   // static const Color highlight = Colors.blue;\n   // static const Color addClient = Color.fromRGBO(3, 9, 164, 0.7);\n   // static const Color addTaxPayer = Color.fromRGBO(3, 9, 164, 1);\n"
+                },
+                {
+                    "date": 1690982518082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   static const Color border = Color.fromRGBO(204, 209, 211, 1);\n   static const Color primary = Color.fromRGBO(103, 58, 183, 1);\n   static const Color greenDot = Color.fromRGBO(13, 212, 92, 1);\n \n-  static const Color primaryText = Color.fromRGBO(28, 25, 57, 1);\n+  static const Color primaryText = Color.fromRGBO(8, 14, 44, 1); \n   static Color secondaryText =\n       const Color.fromRGBO(0, 0, 0, 1).withOpacity(0.4);\n   static const Color clickableText = Color.fromRGBO(249, 180, 45, 1);\n   // static const Color redBox = Color.fromRGBO(195, 3, 3, 1);\n"
+                },
+                {
+                    "date": 1690984450064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   static const Color greenDot = Color.fromRGBO(13, 212, 92, 1);\n \n   static const Color primaryText = Color.fromRGBO(8, 14, 44, 1);\n   static Color secondaryText =\n-      const Color.fromRGBO(0, 0, 0, 1).withOpacity(0.4);\n+      const Color.fromRGBO(218, 223, 225, 1);\n   static const Color clickableText = Color.fromRGBO(249, 180, 45, 1);\n   // static const Color redBox = Color.fromRGBO(195, 3, 3, 1);\n   // static const Color highlight = Colors.blue;\n   // static const Color addClient = Color.fromRGBO(3, 9, 164, 0.7);\n"
+                }
+            ],
+            "date": 1690980760004,
+            "name": "Commit-0",
+            "content": "import 'package:monie_point/export.dart';\n\nclass NimvasColors {\n  // Light Theme\n  static const Color background = Color.fromRGBO(255, 255, 255, 1);\n  static const Color border = Color.fromRGBO(204, 209, 211, 1);\n  static const Color primary = Color.fromRGBO(13, 212, 92, 1);\n  static const Color primaryText = Color.fromRGBO(28, 25, 57, 1);\n  static Color secondaryText =\n      const Color.fromRGBO(0, 0, 0, 1).withOpacity(0.4);\n  static const Color logoColor = Color.fromRGBO(98, 144, 233, 1);\n  static const Color redBox = Color.fromRGBO(195, 3, 3, 1);\n  static const Color highlight = Colors.blue;\n  static const Color addClient = Color.fromRGBO(3, 9, 164, 0.7);\n  static const Color addTaxPayer = Color.fromRGBO(3, 9, 164, 1);\n}\n"
+        }
+    ]
+}

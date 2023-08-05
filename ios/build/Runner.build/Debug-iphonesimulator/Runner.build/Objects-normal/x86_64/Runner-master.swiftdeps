@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "e2a7c20b15242b163265b4286fe833a0cf236018a8914660219db2297bf62162"
+build_start_time: [1691042488, 969683000]
+build_end_time: [1691042491, 143420000]
+inputs:
+  "/Users/solomonlaleye/Desktop/monie_point/ios/Runner/AppDelegate.swift": [1675285518, 0]

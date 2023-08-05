@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/components/primary_text.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1690980367554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690984274840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:monie_point/export.dart';\n+import 'package:monie_point/utils/colors.dart';\n \n class PrimaryText extends StatelessWidget {\n   final Color? color;\n   final String text;\n@@ -24,9 +25,9 @@\n       text,\n       textAlign: textAlign ?? TextAlign.left,\n       overflow: textOverflow,\n       style: TextStyle(\n-          // color: color ?? NimvasColors.primaryText,\n+          color: color ?? MoniePointTestColors.primaryText,\n           fontSize: fontSize ?? 13.0,\n           fontWeight: fontWeight ?? FontWeight.w500,\n           fontFamily: 'Candara'),\n     );\n"
+                },
+                {
+                    "date": 1690987988769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n       textAlign: textAlign ?? TextAlign.left,\n       overflow: textOverflow,\n       style: TextStyle(\n           color: color ?? MoniePointTestColors.primaryText,\n-          fontSize: fontSize ?? 13.0,\n+          fontSize: fontSize ?? 24.0,\n           fontWeight: fontWeight ?? FontWeight.w500,\n           fontFamily: 'Candara'),\n     );\n   }\n"
+                }
+            ],
+            "date": 1690980367554,
+            "name": "Commit-0",
+            "content": "\nimport 'package:monie_point/export.dart';\n\nclass PrimaryText extends StatelessWidget {\n  final Color? color;\n  final String text;\n  final double? fontSize;\n  final FontWeight? fontWeight;\n  final TextAlign? textAlign;\n  final TextOverflow? textOverflow;\n\n  const PrimaryText({\n    super.key,\n    this.color,\n    required this.text,\n    this.fontSize,\n    this.fontWeight,\n    this.textAlign,\n    this.textOverflow,\n  });\n\n  @override\n  Widget build(BuildContext context) {\n    return Text(\n      text,\n      textAlign: textAlign ?? TextAlign.left,\n      overflow: textOverflow,\n      style: TextStyle(\n          // color: color ?? NimvasColors.primaryText,\n          fontSize: fontSize ?? 13.0,\n          fontWeight: fontWeight ?? FontWeight.w500,\n          fontFamily: 'Candara'),\n    );\n  }\n}\n"
+        }
+    ]
+}

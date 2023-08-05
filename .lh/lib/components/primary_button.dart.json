@@ -1,0 +1,34 @@
+{
+    "sourceFile": "lib/components/primary_button.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1690980461662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690980488552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import 'package:monie_point/components/secondary_text.dart';\n import 'package:monie_point/export.dart';\n \n class PrimaryButton extends StatelessWidget {\n   final double? height;\n@@ -20,17 +21,17 @@\n   Widget build(BuildContext context) {\n     return ElevatedButton(\n       onPressed: onPressed,\n       style: ElevatedButton.styleFrom(\n-        backgroundColor: color ?? NimvasColors.primary,\n+        // backgroundColor: color ?? NimvasColors.primary,\n         shape: RoundedRectangleBorder(\n           borderRadius: BorderRadius.circular(3.0),\n         ),\n         minimumSize: Size(width ?? double.infinity, height ?? 37.0),\n       ),\n       child: SecondaryText(\n         text: buttonText,\n-        color: NimvasColors.background,\n+        // color: NimvasColors.background,\n       ),\n     );\n   }\n }\n"
+                },
+                {
+                    "date": 1691184475762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n       onPressed: onPressed,\n       style: ElevatedButton.styleFrom(\n         // backgroundColor: color ?? NimvasColors.primary,\n         shape: RoundedRectangleBorder(\n-          borderRadius: BorderRadius.circular(3.0),\n+          borderRadius: BorderRadius.circular(350.0),\n         ),\n         minimumSize: Size(width ?? double.infinity, height ?? 37.0),\n       ),\n       child: SecondaryText(\n"
+                },
+                {
+                    "date": 1691184500124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   Widget build(BuildContext context) {\n     return ElevatedButton(\n       onPressed: onPressed,\n       style: ElevatedButton.styleFrom(\n-        // backgroundColor: color ?? NimvasColors.primary,\n+        backgroundColor: color ?? MoniePointTestColors.primary,\n         shape: RoundedRectangleBorder(\n           borderRadius: BorderRadius.circular(5.0),\n         ),\n         minimumSize: Size(width ?? double.infinity, height ?? 37.0),\n"
+                },
+                {
+                    "date": 1691184509925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n       onPressed: onPressed,\n       style: ElevatedButton.styleFrom(\n         backgroundColor: color ?? MoniePointTestColors.primary,\n         shape: RoundedRectangleBorder(\n-          borderRadius: BorderRadius.circular(5.0),\n+          borderRadius: BorderRadius.circular(50.0),\n         ),\n         minimumSize: Size(width ?? double.infinity, height ?? 37.0),\n       ),\n       child: SecondaryText(\n"
+                }
+            ],
+            "date": 1690980461662,
+            "name": "Commit-0",
+            "content": "\nimport 'package:monie_point/export.dart';\n\nclass PrimaryButton extends StatelessWidget {\n  final double? height;\n  final double? width;\n  final Color? color;\n  final String buttonText;\n  final VoidCallback onPressed;\n\n  const PrimaryButton({\n    Key? key,\n    this.height,\n    this.width,\n    this.color,\n    required this.buttonText,\n    required this.onPressed,\n  }) : super(key: key);\n\n  @override\n  Widget build(BuildContext context) {\n    return ElevatedButton(\n      onPressed: onPressed,\n      style: ElevatedButton.styleFrom(\n        backgroundColor: color ?? NimvasColors.primary,\n        shape: RoundedRectangleBorder(\n          borderRadius: BorderRadius.circular(3.0),\n        ),\n        minimumSize: Size(width ?? double.infinity, height ?? 37.0),\n      ),\n      child: SecondaryText(\n        text: buttonText,\n        color: NimvasColors.background,\n      ),\n    );\n  }\n}\n"
+        }
+    ]
+}
